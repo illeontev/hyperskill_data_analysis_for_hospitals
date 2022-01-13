@@ -79,27 +79,3 @@ pt = pt.fillna(0)
 pt_max = pt['t'].max()
 pt_5 = pt[pt['t'] == pt_max]
 print(f'The answer to the 5th question is {pt_5.index[0]}, {pt_max} blood tests')
-
-# # 6 question
-# # What is the most common age of a patient among all hospitals?
-# common['age'].plot(kind='hist', bins=5)
-# plt.show()
-# print(f'The answer to the 1st question: 15-35')
-#
-# # 7 question
-# # What is the most common diagnosis among patients in all hospitals?
-#
-# # print(common.groupby('diagnosis').count().iloc[::,0])
-# common.groupby('diagnosis').count().iloc[::,0].plot()
-# # common['diagnosis'].count().plot(y='diagnosis', kind='pie')
-# plt.show()
-# print(f'The answer to the 1st question: pregnancy')
-#
-#
-# # 8 question
-# sns.set_theme(style="whitegrid")
-# # tips = sns.load_dataset(common)
-# ax = sns.violinplot(x=common["height"])
-# plt.show()
-#
-# print(f'The answer to the 3rd question: It\'s because of something')
